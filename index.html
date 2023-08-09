@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array task 2</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+		
+	</head>
+	<body>
+	
+		<div id = "card_box"></div>
+	
+		<script>
+		
+		//create object
+		
+		let card = {
+			head : "Back-End Development Program (Python)",
+			icon : "fa fa-star",
+			techStack : "Tech-Stack Covered",
+			techStackValue : "GIT, Python, Flask (Blue Print) based API, MongoDB, HTML5, CSS3.",
+			financing : "Financing options",
+			financingValue : "Month-to-month Installments",
+			average : "Average Salary",
+			averageValue : "3.2 LPA",
+			batch : "Batch Size / Branch",
+			batchValue : "10",
+			program : "Program Duration",
+			programValue : "3 Months",
+			learning : "Learning Mode",
+			learningValue : "Classroom / Online",
+			link : "read more",
+			linkValue : "google.com"
+		}
+		
+		//create element
+		
+		var cardHead = document.createElement("h2"),
+			cardIcon = document.createElement("i"),
+			cardTechStack = document.createElement("h3"),
+			cardTechStackValue = document.createElement("p"),
+			cardFinancing = document.createElement("h3"),
+			cardFinancingValue = document.createElement("p"),
+			cardAverage = document.createElement("h3"),
+			cardAverageValue = document.createElement("p"),
+			cardBatch = document.createElement("h3"),
+			cardBatchValue = document.createElement("p"),
+			cardProgram = document.createElement("h3"),
+			cardProgramValue = document.createElement("p"),
+			cardLearning = document.createElement("h3"),
+			cardLearningValue = document.createElement("p"),
+			cardLink = document.createElement("a");
+			cardSec = document.createElement("div");
+			
+			
+		console.log(cardHead, cardTechStack, cardTechStackValue, cardFinancing, cardFinancingValue, cardAverage, cardAverageValue, cardBatch, cardBatchValue, cardProgram, cardProgramValue, cardLearning, cardLearningValue, cardLink);
+		
+		// 
+			cardHead.innerHTML=card.head ;
+			cardTechStack.innerHTML=card.techStack ;
+			cardTechStackValue.innerHTML=card.techStackValue ;
+			cardFinancing.innerHTML=card.financing ;
+			cardFinancingValue.innerHTML=card.financingValue ;
+			cardAverage.innerHTML=card.average ;
+			cardAverageValue.innerHTML=card.averageValue ;
+			cardBatch.innerHTML=card.batch ;
+			cardBatchValue.innerHTML=card.batchValue ;
+			cardProgram.innerHTML=card.program ;
+			cardProgramValue.innerHTML=card.programValue ;
+			cardLearning.innerHTML=card.learning ;
+			cardLearningValue.innerHTML=card.learningValue ;
+			cardLink.innerHTML=card.link;
+		
+		
+		// attribute
+			cardIcon.setAttribute("class",card.icon);
+			cardLink.setAttribute("href",card.linkValue);
+			cardSec.setAttribute("class","card_list");
+			
+			console.log(cardSec);
+			
+			
+			cardSec.appendChild(cardHead);
+			cardSec.appendChild(cardIcon);
+			cardSec.appendChild(cardTechStack);
+			cardSec.appendChild(cardTechStackValue);
+			cardSec.appendChild(cardFinancing);
+			cardSec.appendChild(cardFinancingValue);
+			cardSec.appendChild(cardAverage);
+			cardSec.appendChild(cardAverageValue);
+			cardSec.appendChild(cardBatch);
+			cardSec.appendChild(cardBatchValue);
+			cardSec.appendChild(cardProgram);
+			cardSec.appendChild(cardProgramValue);
+			cardSec.appendChild(cardLearning);
+			cardSec.appendChild(cardLearningValue);
+			cardSec.appendChild(cardLink);
+			
+			
+			//
+			
+			var cardBox = document.getElementById("card_box");
+			cardBox.appendChild(cardSec);
+		
+			
+		</script>
+		
+	</body>
+</html>
